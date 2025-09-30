@@ -1,0 +1,80 @@
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  background: #004466;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+nav ul li a:hover {
+  background: #006699;
+  border-radius: 5px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Images styling (box model) */
+img {
+  border: 3px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* nth-child selector */
+.gallery-grid img:nth-child(odd) {
+  border-radius: 30px;
+}
